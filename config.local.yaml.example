@@ -1,0 +1,39 @@
+# ChatGPT to Markdown Configuration Example
+# Copy this file to config.yaml and customize for your local environment
+
+# Output settings
+output:
+  # Default output directory
+  directory: "./output"
+  
+  # Default format: standard, obsidian, blog
+  format: "obsidian"
+  
+  # Obsidian vault settings
+  obsidian:
+    vault_path: "~/Documents/your_vault"
+    # Subdirectories for different types of notes
+    slipbox_path: "000_Slipbox/chatgpt_dialogues"
+    blog_path: "100_blog_drafts"
+
+# OpenAI API settings (optional - for automatic insights generation)
+openai:
+  # API key via OPENAI_API_KEY environment variable
+  # model to use for insights generation
+  model: "gpt-4o-mini"
+  
+  # Temperature for generation
+  temperature: 0.2
+
+# Browser settings
+browser:
+  # Run in headless mode by default
+  headless: true
+  
+  # Timeout in milliseconds
+  timeout: 30000
+
+# Language settings
+language:
+  # Default language for insights: en or ja
+  insights_language: "en"

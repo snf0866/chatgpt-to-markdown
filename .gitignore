@@ -77,3 +77,4 @@ conversations/
 # Playwright
 playwright-report/
 test-results/
+config.yaml
